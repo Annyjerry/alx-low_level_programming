@@ -9,12 +9,12 @@ int main(void)
 	int num = 0;
 	char ch = 'a';
 
-	if (num != 9)
+	while (num <= 9)
 	{
 		putchar('0' + num);
 		num++;
 	}
-	if (ch != 'f')
+	while (ch <= 'f')
 	{
 		putchar(ch);
 		ch++;
