@@ -1,8 +1,11 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+/**
+ * main - main function to generate a random number
+ * Return: Always 0 (Success)
+ */
 
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
@@ -11,15 +14,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 if (n < 0)
 {
-printf("%d is nagative \n", n);
+	printf("%d is nagative \n", n);
 }
 else if (n == 0)
 {
-printf("%d is zero \n", n);
+	printf("%d is zero \n", n);
 }
-else
+else if(n > 0)
 {
-printf("%d is positive \n", n);
+	printf("%d is positive \n", n);
 }
-	return (0);
+return (0);
 }
