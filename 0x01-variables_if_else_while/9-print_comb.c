@@ -13,9 +13,8 @@ int main(void)
 		putchar((num % 10) + '0');
 		num++;
 		if (num == 9)
-		{
 			continue;
-		}
+
 		putchar(',');
 		putchar(' ');
 	}
